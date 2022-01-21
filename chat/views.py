@@ -7,9 +7,9 @@ from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from django.conf import settings
 import json
-import speech_recognition as sr
-import sounddevice as sd
-import wavio as wv
+# import speech_recognition as sr
+# import sounddevice as sd
+# import wavio as wv
 
 # Create your views here.
 class Home(View):
@@ -62,17 +62,20 @@ class Chat(View):
 class Speech(View):
     @method_decorator(csrf_exempt)
     def post(self, request):
-        r = sr.Recognizer()
-        fs = 44100
-        seconds = 6.0
-        recording = sd.rec(int(seconds * fs), samplerate=fs, channels=2)
-        sd.wait()
-        wv.write("file.wav", recording, fs, sampwidth=2)
-        audio = sr.AudioFile("file.wav")
-        with audio as source:
-            audio = r.record(source)
-
-        return JsonResponse(r.recognize_google(audio), status=200, safe=False)
+        # r = sr.Recognizer()
+        # fs = 44100
+        # seconds = 6.0
+        # recording = sd.rec(int(seconds * fs), samplerate=fs, channels=2)
+        # sd.wait()
+        # wv.write("file.wav", recording, fs, sampwidth=2)
+        # audio = sr.AudioFile("file.wav")
+        # with audio as source:
+        #     audio = r.record(source)
+        #
+        # return JsonResponse(r.recognize_google(audio), status=200, safe=False)
+        return JsonResponse({
+            'name': 'speech'
+        })
 
     def get(self, request, *args, **kwargs):
         """
