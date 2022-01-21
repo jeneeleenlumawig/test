@@ -81,7 +81,7 @@
 .chat-box-logo {
     height: 60px;
     width: 350px;
-    background-image: url(../../static/images/logo.png);
+    background-image: url(../../staticfiles/images/logo.png);
     background-size: 100%;
 }
 
