@@ -50,3 +50,4 @@ urllib3==1.26.8
 wavio==0.0.4
 Werkzeug==2.0.1
 whitenoise==5.3.0
+gunicorn
