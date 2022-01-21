@@ -85,9 +85,9 @@ CHATTERBOT = {
 from chatterbot import ChatBot
 BOT = ChatBot(**CHATTERBOT)
 TRAINER = ChatterBotCorpusTrainer(BOT)
-TRAINER.train(
+#TRAINER.train(
 # "chatterbot.corpus.english",
-    "dataset"
+#    "dataset"
 #)
 
 # Database
