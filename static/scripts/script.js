@@ -1,8 +1,9 @@
 $(function () {
     var INDEX = 0;
     var str = "";
+    var audiomode = false;
     INDEX++;
-    str += "<div id='cm-msg-" + INDEX + "' class=\"chat-msg " + "user" + "\">";
+    str += "<div id='cm-msg-" + INDEX + "' class=\"chat-msg user \">";
     str += "          <div class=\"cm-msg-text\">";
     str += "Hi, How may I help you?";
     str += "          <\/div>";
@@ -19,7 +20,7 @@ $(function () {
 
         setTimeout(function () {
             generate_message(msg, 'user');
-        }, 1000)
+        }, 500)
 
     })
 
@@ -39,19 +40,18 @@ $(function () {
         }
         else {
             $.ajax({
-                data: {
-                    msg: input,
-                },
+                data: input,
                 type: "POST",
-                url: "/get",
+                dataType: 'json',
+                url: "/chat/",
             }).done(function (data) {
                 str = "";
                 str += "<div id='cm-msg-" + INDEX + "' class=\"chat-msg " + type + "\">";
                 str += "          <div class=\"cm-msg-text\">";
-                str += data;
+                str += data['text'];
                 str += "          <\/div>";
                 str += "        <\/div>";
-
+                debugger;
                 $(".chat-logs").append(str);
                 $("#cm-msg-" + INDEX).hide().fadeIn(300);
                 $(".chat-logs").stop().animate({ scrollTop: $(".chat-logs")[0].scrollHeight }, 1000);
@@ -76,4 +76,62 @@ $(function () {
         $(".chat-box").toggle('scale');
     })
 
+    var text = "Listening now";
+    var ctr = 0;
+
+    $("#chat-audio").click(function (e) {
+        if (audiomode) {
+            reset_audio();
+        }
+        else {
+            audiomode = true;
+            $("#chat-input").attr("disabled", true);
+            $('.chat-logs').css({ opacity: 0.5 });
+            $("#chat-audio").text("stop_circle");
+
+            setInterval(listen_audio, 500);
+            setTimeout(reset_audio, 6000);
+
+            $.ajax({
+                type: "POST",
+                dataType: 'json',
+                url: "/speech/",
+            }).done(function (data) {
+                generate_message(data, 'self');
+
+                setTimeout(function () {
+                    generate_message(data, 'user');
+                }, 1000)
+            });
+        }
+        $(".loading").toggle();
+    })
+
+    function reset_audio() {
+        clearInterval(listen_audio);
+        text = "";
+        audiomode = false;
+        $("#chat-input").attr("disabled", false);
+        $('.chat-logs').css({ opacity: 1.0 });
+        $("#chat-audio").text("mic");
+        $("#chat-input").val("");
+        $(".loading").toggle();
+    }
+
+    function listen_audio() {
+
+        if (!audiomode) {
+            return;
+        }
+
+        text += ".";
+        ctr++;
+
+        if (ctr == 4) {
+            text = "Listening now";
+            ctr = 0;
+        }
+
+        $("#chat-input").val(text);
+    }
 })

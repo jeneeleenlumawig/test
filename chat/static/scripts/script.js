@@ -43,7 +43,7 @@ $(function () {
                 data: input,
                 type: "POST",
                 dataType: 'json',
-                url: "https://floating-tor-69500.herokuapp.com/chat/",
+                url: "/chat/",
             }).done(function (data) {
                 str = "";
                 str += "<div id='cm-msg-" + INDEX + "' class=\"chat-msg " + type + "\">";
@@ -95,7 +95,7 @@ $(function () {
             $.ajax({
                 type: "POST",
                 dataType: 'json',
-                url: "https://floating-tor-69500.herokuapp.com/speech/",
+                url: "/speech/",
             }).done(function (data) {
                 generate_message(data, 'self');
 
