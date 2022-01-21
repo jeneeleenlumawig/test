@@ -85,10 +85,10 @@ CHATTERBOT = {
 from chatterbot import ChatBot
 BOT = ChatBot(**CHATTERBOT)
 TRAINER = ChatterBotCorpusTrainer(BOT)
-#TRAINER.train(
+TRAINER.train(
 # "chatterbot.corpus.english",
-#    "dataset"
-#)
+    "dataset"
+)
 
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
