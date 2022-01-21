@@ -1,0 +1,126 @@
+categories:
+- DocXtools
+conversations:
+- - Is DocXtools 9.3 compatible with iManage Work Server v10.1.2.45?
+  - Yes, there is a client version. There is the server for Work 10 and then the client version for Work 10. 
+  - All of our products (combined product sets) are compatible with the Work 10 server and FileSite/Desksite 9.x but only a limited number are Work 10 Client compatible. 
+- - What is the difference between DocXtools, DocXchange, and DocXamine?
+  - As follows-
+  - DocXchange is no longer supported. It was used to convert documents from Word Perfect to Word. 
+  - You could also repair and convert to a standard firm style during the conversion.
+  - Converts, cleans & repairs multiple files – manages hundreds, thousands or millions of files.
+  - Manages files batches and their "deltas," distributes files across multiple machines for processing, integrates w/the DMS Runs outside of Word.
+  - Use DocXtools to clean, repair & style a single, open document that has problems or is using incorrect styles
+  - Used every day to facilitate rapid cleanup & style application on single documents.
+  - Runs inside of Word.
+  - Does not convert from Word Perfect.
+  - Converts documents one at a time.
+  - Use DocXamine for batch analysis and cleanup of a set of documents or to assess skills or document quality and plan training.
+  - Generates a report.
+  - Runs outside of Word.
+  - DocXamine can leverage the cleanup routines of DocXtools.
+  - DocXamine is not a migration tool.
+  - DocXamine is an analysis & reporting tool.
+  - Converts documents in batches.
+- - What is the difference between DocXtools, DocXtools Express, and DocXtools Companion?
+  - DocXtools is the primary application for Word Experts and Word Processing for cleaning and handling any tactical document needs.
+  - DocXtools Companion helps make lawyers more self-sufficient, reducing the time they struggle trying to deal with some of their most common document issues. 
+  - This application does solve common/minonr document stability issues and other minor cleaning. 
+  - For large scale document cleanup, use DocXtools.
+  - DocXtools Express is a pre-configured set of the essential functionality. 
+  - Litera Microsystems designed DocXtools Express for firms without the resources or the time to develop a fully customized and tailored solution.
+- - Does DocXtools ensure documents are PDF and PDF/A ready?
+  - Yes. DocXtools can check documents to ensure they are structured so that they will convert to PDF or PDF/A appropriately.
+- - Can I purchase the Author features without DocXtools?
+  - Beginning with DocXtools 7.9, we no longer market the Author Toolkit as a separate product. 
+  - We had no customers with that configuration, and now simply sell DocXtools to Life Sciences customers including the Author Features. 
+  - Contact your sales representative for more information on pricing.
+- - Who are the Author Features intended for?
+  - The Author Features are intended to be used by our Life Sciences customers. 
+  - The Author Features takes a fresh look at some of the issues facing medical writers. 
+  - The 7.5 release introduced the brand new Author Features, designed specifically for authors and medical writers in response to industry trends of achieving quality and compliance earlier in the submission lifecycle. 
+  - Automated abbreviations features reduce by 90% the time it takes to ensure proper abbreviation usage, table completeness and compliance with company guidelines.
+- - Is the Abbreviation accelerator no longer available in legal?
+  - The abbreviation functionality is no longer available as an accelerator. 
+  - The new abbreviations management functionality is intended to help build an abbreviations table and validate the use of abbreviations in pharmaceutical documents. 
+  - It is no longer available for legal.
+- - What version of DocXtools should I be running this application with?
+  - Litera Microsystems recommends DocXtools v8.2 or higher on machines that are going to have both applications. 
+  - DocXtools Companion has been tested with DocXtools 7.0 and higher. 
+  - If you use the Litera Microsystems' Numbering Module and want to integrate DocXtools with this feature-set, you need DocXtools 7.9 or higher as this has the needed MDXT database.
+- - Do I have to have both DocXtools and DocXtools Companion installed on the same machine for the software to work?
+  - No. DocXtools Companion is a separate installation with its own set of files. 
+  - If you are a Litera Microsystems' Numbering, Table of Contents and DocID (NTD) customer, you may want to consider having all applications installed on all users' machines. 
+  - DocXtools Companion can integrate with Numbering by using and applying your organization's enterprise numbering schemes. 
+  - The same is true if you opt into our .5 service for 3rd party numbering integration.
+- - How many service days is DocXtools Companion?
+  - DocXtools Companion has 0, .5 and 1 service day. 
+  - The application is 0 by default but If a customer wants *custom ribbon placement or integration with their 3rd party numbering, we charge a .5 day of services for each.
+  - custom ribbon placement is anything outside of our standard locations. (Home Tab - first group, Home Tab - last group, Litera Microsystems tab).
+  - Are there any Office or OS versions that DocXtools Companion Will Not Work With?
+  - DocXtools Companion will work with Office 2010, 2013 and 2016.
+- - When do I click each of these buttons?
+  - Below are more general statements for the DocXtools Companion buttons. 
+  - For more detailed and tactical scenarios, please see the DocXtools Companion When to Use file.
+  - Numbering- An author would click this button when they notice their numbering is visibly incorrect, inconsistently formatted, or not advancing properly when inserting new content. 
+  - This button will correct the document numbering using a numbering template, if available, will otherwise create a template if needed.
+  - TOC- An author would click this button when they aren't happy with the format of their TOC, they don't have a TOC, or their TOC is broken. 
+  - This button will fix the numbering in their document and then create a clean, 1 or 2-level TOC for them in the document.
+  - References- An author would click this when they aren't sure if they have properly inserted automated cross references in their document and don't want to spend the time searching for them all.   
+  - This button will first fix the numbering in their document and then connect all references to numbering that exists in the document.
+- - Does DocXtools Companion fix all of my document issues? What will a document expert see in a document after they run all DocXtools Companion buttons?
+  - DocXtools Companion was designed to fix the issues authors face every day, issues related to numbering, manually typed references, table of contents, and conversion issues. 
+  - But as you know, there are MANY other issues that could occur in a document depending on where it came from, how many people have edited it, and where it is in the document lifecycle 
+  - and for those issues DocXtools will still be your solution for those problems. 
+  - Things like broken or missing references, problems with scanned documents, inconsistencies in firm styles, and doc to docx conversions. 
+  - Power-users should continue to use DocXtools to solve these problems but authors should use DocXtools Companion every day.
+- - Is there a separate license key people will need to get?
+  - There will be a new separate license key that they will need to get for DXT-C. 
+  - These license keys are unique for each customer (per company -- not per user) and they are validated against our license server. 
+  - The license server just checks for fake keys. 
+  - It does not cap the number of users or automatically stop expired products from working – but allows the sales team to know if that is occurring.
+  - DXT-C will be a separate installer. The DXT-C installer will be much smaller, will not require an uninstall for upgrades, but will have slightly more modern installation requirements (OS, .NET, Office). 
+  - The reduced footprint and easier installation will make it much easier to roll out across the company and keep up to date.
+  - The existing license key will continue to work for DocXtools, the DocXtools installer will be unchanged, and the installation requirements will be unchanged for existing customers. 
+  - The goal here is to eliminate obstacles to adopting 8.0.
+- - Does DocXtools Companion Integrate with my DMS?
+  - DocXtools Companion does all work against the active document. 
+  - There is no need for DMSTag and DMSSave controls. 
+  - A file save on the active document will continue to maintain the necessary hooks to the DMS.
+- - Can I see what information was collected about me via your software improvement program?
+  - Yes, your customer success managers can help with this. 
+  - They will request a telemetry log from the development team who will provide a report on that firm's usage tracking.
+- - Can I opt out of the software improvement program running solely on my computer?
+  - Yes, you (or your firm) has the opportunity to opt out during installation on your device. 
+  - You can also contact customer support for instructions on opting out after installation.
+- - What is our story for cross references across our various products?
+  - DocXtools Companion and DocXtools help create and validate references to paragraphs you are currently speaking about inter-document. 
+  - Contract Companion references identifying areas you speak to that don't exist inter-document, and allowing you to validate that the present reference is truly the correct context.
+  - DocXtools Companion cross references feature helps-
+  - Simplify the cross reference building experience.
+  - Is less end-user invasive.
+  - Jumpstart a large set of the building process.
+  - Ensures cross reference candidates are built and verified specific to the documents numbering.
+  - Value- One-click solution that requires no training or Word knowledge to insert automated cross references in 90% of your document.
+  - Contract Companion cross references feature helps-
+  - Streamline the process of reviewing ALL cross references to make sure they are accurate by providing a workflow that eliminates hopping around the document and validates references in seconds.
+  - Locates any references that have changed since originally inserted into the document or point to a location that no longer exists.
+  - Value- Provides authors with the most comprehensive cross reference proofreading for both internal and external document references.
+  - DocXtools cross references feature helps-
+  - Build/Review cross references in tactical/calculated manor.
+  - Full-service solution for anything you want to do with cross references.
+  - Value- review all cross reference types in a single interface and drastically reduces the time it takes to build your candidates. 
+- - What is our story for numbering across our various products?
+  - DocXtools will help apply numbering via style application and our numbering module in a targeted manor, also allowing for more tactical fine-tuning of the numbering schemes themselves. 
+  - DocXtools Companion, will automatically apply and fix numbering via a single button click with zero user interaction. Contract Companion, points out numbering issues within a document.
+- - What is the story for DocXtools Companion in UK, given their house styles?
+  - DocXtools Companion will use house styles if/when they are present in the document and match the visual look/feel the user is trying to accomplish. 
+  - If DocXtools Companion does apply a bespoke scheme to the document and a house style is needed, swapping one scheme or style for another can be quickly accomplished now that the document is in an automated stated. 
+  - Swapping can be accomplished through DocXtools Style Application, DocXtools Numbering or a 3rd party suite of style/numbering tools where available.
+  - Additionally, if the customer is on DocXtools 7.9 or higher, they will be able to configure a set of predefined numbering schemes to only be used when working with the DocXtools Companion buttons. - This will enforce house styles by name and definition.
+- - Why would I use DocXtools Companion over CAS in the UK?
+  - UK customers are open to using DocXtools Companion to keep fee earners productive and keep the document healthy. 
+  - If it eventually needs CAS or document experts to work with it, that's fine too. Additionally, CAS is to jarring for the end users at it does things like flatten all fields in a document which would confuse the end-user. 
+- - Do I need both DocXtools and DocXtools Companion?
+  - Yes. DocXtools is still a necessity for document cleanup as well as other more tactical scenarios a Word Expert would find themselves in. 
+  - DocXtools Companion should be looked as a complement to this larger application.

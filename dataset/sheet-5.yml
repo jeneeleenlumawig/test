@@ -1,0 +1,31 @@
+categories:
+- O365 Compare
+conversations:
+- - What is O365 Compare Add-In?
+  - Litera offers integration of O365 Apps with Litera Compare Server for Comparison.<br/>
+    The Litera Compare/O365 Add-In integration enables you to run comparisons from within O365 apps and OneDrive and display the redline in the Litera Compare browser interface.<br/>
+    O365 Compare Add-In supports both the Web and Desktop version of O365 Apps.
+- - When will O365 Compare Add-In be launched?
+  - O365 Compare Add-in will be launched after the end of the Q3 release cycle which ends on 21st Sep 2021.
+- - How is O365 Compare Add-In licensed?
+  - This O365 App integration uses Litera's hosted Litera Compare Servers (CaaS) which works off of an 'Allow List',<br/>
+    where the users email or domain must be added for comparisons to complete successfully.<br/>
+    This approach will likely change in the future - we would like these integrations to be able to check against our CRM (Salesforce)<br/>
+    to check entitlement rather than us having a separate place to maintain these records.<br/>
+    The users need to contact Litera Customer Support to do this for them.<br/>
+- - What instance of CaaS Server would the comparisons sent to?
+  - Documents in O365 Apps are compared in environments located within the appropriate geographical region (based on the IP Address)<br/>
+    ensuring data isn't sent somewhere that violates local data privacy  laws.<br/>
+    For example, if you’re in the U.S., the comparison will be performed by the U.S. instance of CaaS.
+- - Am I entitled to use both G-Suite and O365 Integration once I have a valid Litera Compare Server License?
+  - 'Yes, but the users email or domain needs to be whitelisted in our Allow List for them to be able to use both the integrations.<br/>
+    Whitelisting email or domain once will mean they can use either of the integrations.'
+- - Considering both G-Suite & O365 Integration point to the CaaS instance of Litera Compare Server, can the user access this if he has a license of Litera Compare Server (On-Prem)?
+  - Any valid Litera Compare Server License (On-Prem or CaaS), will allow usage of Integration applications
+- - Are we going to do a big announcement around this launch?
+  - 'Yes, but need to wait until we deploy it on Microsoft App soruce.'
+- - Do I need internet connectivity for these apps to work?
+  - 'Yes'
+- - What Product Subscriptions give users access to O365 Compare Add-in?
+  - Workshare Compare Server and Litera Compare Server subscriptions will give access to Litera Compare Server and permits users to use the integrations<br/>
+   (they will need to be added to an Allow List to use integrations that Litera host).

@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+{% block content %}
+{% load static %}
+    <img src="{% static 'images/support.png' %}" />
+    <div id="chat-circle" class="btn btn-raised">
+        <div id="chat-overlay"></div>
+    </div>
+
+    <div class="chat-box">
+        <div class="chat-box-header">
+            <img src="{% static 'images/logo.png' %}" />
+            <span class="chat-box-toggle"><img src="{% static 'images/close.png' %}" /></span>
+        </div>
+        <div class="chat-box-body">
+            <div class="chat-box-overlay">
+            </div>
+            <div class="chat-logs">
+
+            </div><!--chat-log -->
+            <div class="loading" data-anim="base loading">
+                <div class="circle" data-anim="base left"></div>
+                <div class="circle" data-anim="base right"></div>
+            </div>
+        </div>
+        <div class="chat-input">
+            <form>
+                <input type="text" id="chat-input" name="msg" placeholder="Send a message..." />
+                <button type="submit" class="chat-submit" id="chat-submit" /><i id="chat-audio" class="material-icons icon-green">mic</i>
+
+            </form>
+        </div>
+    </div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{% static 'scripts/script.js' %}"></script>
+{% endblock %}

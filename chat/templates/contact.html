@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div style="height: 100px; background-color: burlywood;">
+    <h2 style="padding-top: 30px;padding-left: 5px;vertical-align: middle;">{{ title }}</h2>
+</div>
+<h3>{{ message }}</h3>
+
+<address>
+    <div class="row">
+        <div class="medium-3 columns">
+            <h2 style="text-align: center;">Chicago</h2>
+<p style="text-align: center;">Tel: +1 630 598 1100</p>
+        </div>
+        <div class="medium-3 columns">
+            <h2 style="text-align: center;">New York</h2>
+<p style="text-align: center;">Tel: +1 646 661 7368</p>
+        </div>
+        <div class="medium-3 columns">
+            <h2 style="text-align: center;">London, UK</h2>
+<p style="text-align: center;">Tel: +44 (0)20 3890 2860</p>
+        </div>
+        <div class="medium-3 columns">
+            <h2 style="text-align: center;">Ahmedabad, India</h2>
+<p style="text-align: center;">Tel: +91 794 019 2694</p>
+        </div>
+</div>
+</address>
+
+{% endblock %}
