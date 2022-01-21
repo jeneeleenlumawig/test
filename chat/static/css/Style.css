@@ -66,6 +66,10 @@
     cursor: pointer;
 }
 
+.support-image {
+    max-width: 100%;
+}
+
 .chat-box-header {
     background: white;
     height: 50px;
