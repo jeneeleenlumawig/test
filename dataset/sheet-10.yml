@@ -1,0 +1,30 @@
+categories:
+- Change-Pro
+conversations:
+- - When comparing one to many pdf files, the prompt ‘document author could not be loaded' appears.  Is there a reason we cannot do PDF multiple compare?
+  - You can compare multiple PDFs, but Author cannot be detected automatically.  User needs to enter Author manually, then the Compare button will be available.
+- - Why does Change-Pro crash?
+  - Well, it could be for any number of reasons, but the biggest reason we've seen is due to running out of memory during the RTF conversion & compare step @ roughly 15%.<br/>
+    We're mitigating this in the future by comparing the native XML of Office files rather than RTF. (THIS IS NOT TO BE SHARED EXTERNALLY)
+- - REQUEST URI TOO LONG.
+  - File and folder names have the following character limits&#58;<br/>
+    File names are limited to 128 characters in SP2013 and 256 characters in SPO.<br/>
+    Folder names are limited to 256 characters.<br/>
+    Most importantly, the combination of folder path plus file name is limited to 260 characters. These are all boundaries (i.e., hard limits).<br/>
+    In our case the error occurs if the file path+ filename exceeds the above limitations. Below are the files that I used in testing
+- - SharePoint 2010/2013&#58; (151 characters) - seems like the file path had been ignored when the upload is on premise.
+  - C&#58;\Users\Acer\Documents\The quick brown fox jumps over the lazy dog The quick brown fox jumps over the lazy dog The quick brown fox jumps over thee.docx
+- - Sharepoint Online&#58; (259 characters)
+  - C&#58;\Users\Acer\Documents\Change-Pro Redline - change-pro redline - rdudko_161115_42 and <br/>
+    docx long name long namelong namelong namelong namelong namelong namelong namelong namelong namelong namelong namelong namelong namelong namelong namelong namelong nam.docx
+- - What languages does Change-Pro detect/work with?
+  - Change-Pro compares all Latin languages and Mandarin.<br/>
+    Arabic and some East Asian languages are compared but with limitations. This is being improved.<br/>
+- - How many documents can be uploaded into the system at once?
+  - Change-Pro can perform both one to one and one-to-many comparisons. One-to-Many can handle one original and up to six modified at one time.
+- - Can you upload multiple documents and switch between comparisons in the same session?
+  - 'Yes. Similar to a web browser you can have several comparisons open at one time. This option is available under the Comparison drop down menu (it looks like a play button)'
+- - When you click “email” does it email a link to the comparison to be opened up by the recipient in the Change-Pro software or does it email a PDF attachment illustrating the comparison?
+  - 'When you click email, it provides options to send attachments of either the original, modified, redline, or redline with track changes enabled. You can select PDF and/or Word format.<br/>
+    Some people make multiple selections and choose the zip file option.<br/>
+    Once selected, the attachments will be generated in a new Outlook email for sending.'
